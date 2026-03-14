@@ -4,12 +4,15 @@ import { computeSign } from '../../utils/computeSign.js';
  * @typedef {Object} CardDetail
  * @property {Base} base
  * @property {Characters[]} chars
- * @property {{ achieveMedals: [], display: {}, count: number }} achieve
+ * @property {{ achieveMedals: { achievementData: {}, level: number, isPlated: boolean, obtainTs: string }[], display: { [key: string]: string }, count: number }} achieve
  * @property {{ rooms: { id: string, type: number, level: number, chars: [], reports: Record<string, { char: [], output: {}, createdTimeTs: string }> }[] }} spaceShip
  * @property {Domain[]} domain
  * @property {{ curStamina: string, maxTs: string, maxStamina: string }} dungeon
  * @property {{ curLevel: number, maxLevel: number }} bpSystem
  * @property {{ dailyActivation: number, maxDailyActivation: number }} dailyMission
+ * @property {{ score: number, total: number }} weeklyMission
+ * @property {{ charSwitch: boolean, charIds: string[] }} config
+ * @property {string} currentTs
  */
 
 /**

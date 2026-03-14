@@ -69,7 +69,6 @@ export default {
     });
 
     const profileContainer = new ContainerBuilder();
-    console.log(profile.data.spaceShip.rooms);
 
     const introSection = new SectionBuilder()
       .addTextDisplayComponents((textDisplay) =>
@@ -107,6 +106,7 @@ export default {
         `Sanity: **${profile.data.dungeon.curStamina}** / ${profile.data.dungeon.maxStamina}`,
         profile.data.dungeon.maxTs !== '0' && `Full Recovery <t:${profile.data.dungeon.maxTs}:R>`,
         `Activity Points: **${profile.data.dailyMission.dailyActivation}** / ${profile.data.dailyMission.maxDailyActivation}`,
+        `Weekly Routine: **${profile.data.weeklyMission.score}** / ${profile.data.weeklyMission.total}`,
         `Protocol Pass: **${profile.data.bpSystem.curLevel}** / ${profile.data.bpSystem.maxLevel}`,
       ]
         .filter(Boolean)

@@ -96,7 +96,7 @@ import { computeSign } from '../../utils/computeSign.js';
  * @typedef {Object} Domain
  * @property {string} domainId
  * @property {number} level
- * @property {{ id: string, level: number, exp: string, expToLevelUp: string, remainMoney: string, maxMoney: string, officerCharIds: string, officerCharAvatar: string, name: string, lastTickTime: string }[]} settlements
+ * @property {{ id: string, level: number, exp: string, expToLevelUp: string, remainMoney: string, moneyMax: string, officerCharIds: string, officerCharAvatar: string, name: string, lastTickTime: string }[]} settlements
  * @property {{ total: string, count: string }} moneyMgr
  * @property {{ levelId: string, puzzleCount: number, trchestCount: number, equipTrchestCount: number, pieceCount: number, blackboxCount: number }[]} collections
  * @property {{ levelId: string, name: string, puzzleCount: { count: number, total: number }, trchestCount: { count: number, total: number }, equipTrchestCount: { count: number, total: number }, pieceCount: { count: number, total: number }, blackboxCount: { count: number, total: number } }[]} levels
